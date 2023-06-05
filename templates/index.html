@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <div class='cont'>
+                <h2>The higher heating values (HHV) (MJ/kg)<br>Add Input Data</h2>
+            </div><br>
+
+        <form method="POST" action="{{ url_for('index') }}">
+            <div class="form-group">
+                <label for="C_wt">C (wt%)</label>
+                <input type="text" id="C_wt" name="C_wt" placeholder="Enter C (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="H_wt">H (wt%)</label>
+                <input type="text" id="H_wt" name="H_wt" placeholder="Enter H (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="O_wt">O (wt%)</label>
+                <input type="text" id="O_wt" name="O_wt" placeholder="Enter O (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="N_wt">N (wt%)</label>
+                <input type="text" id="N_wt" name="N_wt" placeholder="Enter N (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="S_wt">S (wt%)</label>
+                <input type="text" id="S_wt" name="S_wt" placeholder="Enter S (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Temp_C">Temp. (°C)</label>
+                <input type="text" id="Temp_C" name="Temp_C" placeholder="Enter Temp. (°C)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Time_min">Time (min)</label>
+                <input type="text" id="Time_min" name="Time_min" placeholder="Enter Time (min)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="FC_wt">FC (wt%)</label>
+                <input type="text" id="FC_wt" name="FC_wt" placeholder="Enter FC (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="VM_wt">VM (wt%)</label>
+                <input type="text" id="VM_wt" name="VM_wt" placeholder="Enter VM (wt%)" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="ASH_wt">FC (wt%)</label>
+                <input type="text" id="ASH_wt" name="ASH_wt" placeholder="Enter ASH (wt%)" class="form-control" required>
+            </div>
+        <input type="submit" class='btn' value='Predict!'>
+        </form>
+    </center>
+
+    </body>
+</html>
